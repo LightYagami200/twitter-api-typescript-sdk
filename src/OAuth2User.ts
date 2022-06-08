@@ -167,7 +167,8 @@ export class OAuth2User implements AuthClient {
   async requestAccessToken(code?: string): Promise<{ token: Token }> {
     const { client_id, client_secret, callback, request_options } =
       this.#options;
-    const code_verifier = this.#code_verifier;
+    // const code_verifier = this.#code_verifier;
+    const code_verifier = 'twitter_link';
     if (!client_id) {
       throw new Error("client_id is required");
     }
