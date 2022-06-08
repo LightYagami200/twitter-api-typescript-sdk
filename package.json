@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "postinstall": "tsc",
     "prebuild": "yarn clean",
     "prepublishOnly": "yarn test",
     "build:watch": "tsc --watch",
